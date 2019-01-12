@@ -1,0 +1,26 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>Art by Click</title>
+    <link rel="stylesheet" href="/css/artworks_style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,700i|Major+Mono+Display" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+    <% artworks.forEach(function(artwork) { %>
+        <div class="product">
+            <div class="photo">
+                <a href="/artworks/<%= artwork._id %>">
+                    <img src="/<%= artwork.artworkImage.substring(7,artwork.artworkImage.length) %>">
+                </a>
+            </div>
+            <div class="info">
+                <%= artwork.name %>
+                <%= artwork.artist %>
+            </div>
+        </div>
+    <% }); %>
+    </div>
+
+</body>

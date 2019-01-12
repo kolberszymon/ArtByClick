@@ -1,0 +1,40 @@
+body {
+    background: #DBF8F1;
+    font-family: 'Major Mono Display', monospace;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding:0;
+    margin:0;
+}
+
+.container {
+    font-family: 'Lobster Two';
+    width:100%;
+    height: 100%;
+    display: flex;
+}
+
+
+.photo {
+    width: 50%;
+    height:100vh;
+    text-align: center;
+}
+
+.photo img {
+    max-height: 50%;
+    max-width: 50%;
+    transform: translateY(20%);
+}
+
+.info {
+    float: left;
+    width: 50%;
+    height: 100vh;
+    line-height: 2.2em;
+    font-size: 1.4em;
+}
+
+.desc {
+    transform: translate(5%,25%);
+}
